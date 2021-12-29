@@ -1,0 +1,5 @@
+{
+  "navLogo": "/assets/images/site-navigation/logo.png",
+  "navLinks": ["home","about","service","work","resume","blog","contact"],
+  "navButtonText": "Hire Me Now"
+}

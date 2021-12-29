@@ -1,0 +1,14 @@
+{
+  "layout": "layouts/singleBlog.njk",
+  "tags":"blog",
+  "breadcrumbLinks":[
+    {
+      "linkItself": "/",
+      "linkText": "Home"
+    },
+    {
+      "linkItself": "blog",
+      "linkText": "All Post"
+    }
+  ]
+}

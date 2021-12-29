@@ -1,0 +1,28 @@
+{
+  "contactTitle": "Contact Me",
+  "headerLinks":{
+    "link":"/",
+    "linkText":"Home"
+  },
+  "contactDes": "Contact",
+  "contactInfo":[
+    {
+      "infoIcon":"/assets/images/contact/location.svg",
+      "infoTitle":"Office Address",
+      "titleDes":"3337 New York-205 Hartwick,NY 13348"
+    },
+    {
+      "infoIcon":"/assets/images/contact/phone.svg",
+      "infoTitle":"Phone Number",
+      "titleDes":"(+12) 800 123 45 67 (+12) 800 123 45 68"
+    },
+    {
+      "infoIcon":"/assets/images/contact/time.svg",
+      "infoTitle":"Working Hours",
+      "titleDes":"Open from 10am to 6pm (close at 5pm Sundays)"
+    }
+  ],
+  "formTitle":"Contact Form",
+  "termsandCondition":"I agree that my submitted data is being collected and stored.",
+  "formBtn":"Send Message"
+}

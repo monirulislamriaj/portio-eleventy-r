@@ -1,0 +1,54 @@
+{
+  "subTitle": "My Resume",
+  "title": "My Expertises",
+  "des": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore Magna aliquyam erat, sed diam voluptua. At vero eos accusam justo.",
+  "button1Text": "Education",
+  "button2Text": "Experiences",
+  "education" :
+    [{
+      "year" : "2008-2010",
+      "degree": "Master in Arts",
+      "des": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+    }
+    ,{
+      "year" : "2008-2010",
+      "degree": "Master in Arts",
+      "des": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+    },{
+      "year" : "2008-2010",
+      "degree": "Master in Arts",
+      "des": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+    },{
+      "year" : "2008-2010",
+      "degree": "Master in Arts",
+      "des": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+    }],
+    "experience":[
+      {
+        "year": "2016-present",
+        "experience": "Experience",
+        "des": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+      },
+      {
+        "year": "2016-present",
+        "experience": "Experience",
+        "des": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+      },
+      {
+        "year": "2016-present",
+        "experience": "Experience",
+        "des": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+      },
+      {
+        "year": "2016-present",
+        "experience": "Experience",
+        "des": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+      },
+      {
+        "year": "2016-present",
+        "experience": "Experience",
+        "des": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+      }
+    ]
+  
+}

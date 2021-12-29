@@ -1,0 +1,27 @@
+{
+  "testimonialSubtitle": "Testimonial",
+  "testiminialTitle": "What People are Say About Me?",
+  "recommendedBy":[
+    {
+      "rating": 4,
+      "ratingIcon": "star",
+      "comment": "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna.",
+      "author": "John Doe",
+      "commentDate": " | Jan 21, 2021"
+    },
+    {
+      "rating": 3,
+      "ratingIcon": "star",
+      "comment": "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna.",
+      "author": "Sherlock Homes",
+      "commentDate": " | June 23, 2018"
+    },
+    {
+      "rating": 5,
+      "ratingIcon": "star",
+      "comment": "Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna.",
+      "author": "Ryan Cook",
+      "commentDate": " | Jan 20, 2020"
+    }
+  ]
+}

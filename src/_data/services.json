@@ -1,0 +1,27 @@
+{
+  "servicesSubtitle": "Working Area",
+  "servicesTitle": "Creative Services",
+  "servicesDes": "Enjoy team diversity and increase their networks among others people in various fields by provided.",
+  "serviceProvides":[
+    {
+      "title": "Branding",
+      "description": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+      "icon": "/assets/images/service/branding.svg"
+    },
+    {
+      "title": "Creative Design",
+      "description": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+      "icon": "/assets/images/service/creative.svg"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+      "icon": "/assets/images/service/ui-ux.svg"
+    },
+    {
+      "title": "Web Development",
+      "description": "Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+      "icon": "/assets/images/service/web.svg"
+    }
+  ]
+}

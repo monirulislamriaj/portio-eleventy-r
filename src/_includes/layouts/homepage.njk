@@ -1,0 +1,528 @@
+{% extends "base.njk" %}
+
+{% block preloader %}
+    <div class="preloader-wrap">
+      <div class="inner"></div>
+      <div class="percentage" id="precent"></div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <section class="hero" id="{{nav.navLinks[0]}}">
+      <div class="hero_background-svg">
+        <svg viewBox="0 0 1437 1180">
+          <path
+            fill="#f1f6f9"
+            d="M0 0h1377l60 1010a120 120 0 01-120 120L0 1180z"
+            data-name="Path 1350"
+          />
+        </svg>
+      </div>
+      <div class="hero_footer-svg">
+        <img src="/assets/images/hero/figure-svg.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero_content">
+              <div class="hero_blob">
+                <svg viewBox="0 0 550 550">
+                  <defs>
+                    <linearGradient
+                      id="a"
+                      x1=".069"
+                      x2=".753"
+                      y1=".116"
+                      y2=".858"
+                      gradientUnits="objectBoundingBox"
+                    >
+                      <stop offset="0" stop-color="#fff" />
+                      <stop offset="1" stop-color="#fff" stop-opacity=".012" />
+                    </linearGradient>
+                  </defs>
+                  <g data-name="blob-shape (3)">
+                    <path
+                      class="blob"
+                      fill="url(#a)"
+                      d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <span>{{hero.heroSubTitle}}</span>
+              <h1>{{hero.heroTitle}}</h1>
+              <p>{{hero.heroDes}}</p>
+              <a href="/contact">{{hero.heroBtnText}}</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero_figure">
+              <div class="figure-svg">
+                <img
+                  src="/assets/images/hero/figure-svg.svg"
+                  alt="figure-svg"
+                />
+              </div>
+              <img
+                class="hero_mask_svg"
+                src="{{hero.heroImgBig}}"
+                alt="hero-image"
+              />
+              <div class="hero_figure-popup">
+                <div class="thumb">
+                  <img src="{{hero.heroImgSml}}" alt="popup" />
+                </div>
+                <a
+                  href="{{hero.heroVLInk}}"
+                  type="button"
+                  class="popup-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="24"
+                    viewBox="0 0 21 24"
+                  >
+                    <path
+                      fill="#5d78ff"
+                      d="M17.961 10.264a2 2 0 010 3.473L2.992 22.29A2 2 0 010 20.554V3.446A2 2 0 012.992 1.71z"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="{{nav.navLinks[1]}}">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="about_header">
+              <span>{{about.aboutSubTitle}}</span>
+              <h1>{{about.abouTitle}}</h1>
+              <p>{{about.aboutDes}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about_content">
+              <div class="about_content-thumb">
+                <div class="about-svg">
+                  <img
+                    src="/assets/images/hero/figure-svg.svg"
+                    alt="figure-svg"
+                  />
+                </div>
+                <div class="about_content-thumb-image">
+                  <img
+                    class="about_mask_svg"
+                    src="{{about.aboutImg}}"
+                    alt="about-img"
+                  />
+                </div>
+              </div>
+              <div class="about_content-inner">
+                <div class="about_content-inner-blob">
+                  <!-- <img src="images/about/about-content-svg.svg" alt="about-svg"> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 600 600"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="c"
+                        x1="0.929"
+                        y1="0.111"
+                        x2="0.263"
+                        y2="0.935"
+                        gradientUnits="objectBoundingBox"
+                      >
+                        <stop offset="0" stop-color="#f1f6f9" />
+                        <stop
+                          offset="1"
+                          stop-color="#f1f6f9"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <g data-name="blob-shape (3)">
+                      <path
+                        class="blob"
+                        fill="url(#c)"
+                        d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <h3>{{about.aboutMe.aboutmeHeading}}</h3>
+                <p>
+                  {{about.aboutMe.aboutmeDes}}
+                </p>
+                <ul>
+                  <li><a class="active" href="/contact">{{about.aboutMe.aboutmeButton1Text}}</a></li>
+                  <li><a href="#">{{about.aboutMe.aboutmeButton2Text}}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service" id="{{nav.navLinks[2]}}">
+      <div class="service__background">
+        <svg viewBox="0 0 1283 1126">
+          <path
+            fill="#f1f6f9"
+            d="M100 0h1183v1126l-1183-80A100 100 0 010 946V100A100 100 0 01100 0z"
+            data-name="Path 1369"
+          />
+        </svg>
+      </div>
+      <div class="service__background_shape">
+        <svg viewBox="0 0 550 550">
+          <defs>
+            <linearGradient
+              id="b"
+              x1="0.209"
+              y1="0.085"
+              x2="1.071"
+              y2="1.164"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stop-color="#f1f6f9" />
+              <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+            <path
+              class="blob"
+              fill="url(#b)"
+              d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"
+            />
+          </g>
+        </svg>
+      </div>
+
+      <div class="service__background_pattern">
+        <img
+          src="/assets/images/service/background-pattern.svg"
+          alt="background-pattern"
+        />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="service__header">
+              <span>{{services.servicesSubtitle}}</span>
+              <h1>{{services.servicesTitle}}</h1>
+              <p>
+                {{services.servicesDes}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="service__slider">
+              {% for serviceProvides in services.serviceProvides %}
+                <div class="service__slider_item">
+                  <div class="service__slider_item-icon">
+                    <div class="icon-background">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="122.457"
+                        height="109.702"
+                        viewBox="0 0 122.457 109.702"
+                      >
+                        <path
+                          fill="#f1f6f9"
+                          d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                          data-name="Path 1354"
+                        />
+                      </svg>
+                    </div>
+                    <div class="icon">
+                      <img src={{ serviceProvides.icon }} alt={{ serviceProvides.title }} />
+                    </div>
+                  </div>
+                  <h4>{{ serviceProvides.title }}</h4>
+                  <p>
+                    {{ serviceProvides.description }}
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="{{nav.navLinks[3]}}">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="portfolio__header">
+              <span>{{portfolio.subTitle}}</span>
+              <h1>{{portfolio.title}}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+                <div class="portfolio-item-grid">
+                  {% for caseDetails in collections.caseDetails %}
+                    <div class="portfolio-item">
+                        <img src="{{caseDetails.data.caseDetailsImgHm}}" class="portfolio-item-thumb" alt="portfolio-thumb" />
+                        <div class="portfolio-item-content">
+                        <span>{{caseDetails.data.caseDetailsSubtitle}}</span>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="{{caseDetails.data.page.url}}">{{caseDetails.data.caseDetailsTitle}}</a>
+                        </h3>
+                        <a class="see-more-btn" href="{{caseDetails.data.page.url}}">{{caseDetails.data.caseDetailsBtn}}</a>
+                        </div>
+                    </div>
+                  {% endfor %} 
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume" id="{{nav.navLinks[4]}}">
+      <div class="resume__background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resume__heading">
+              <span>{{resume.subTitle}}</span>
+              <h1>{{resume.title}}</h1>
+              <p>
+                {{resume.des}}
+              </p>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="#education" class="active" data-toggle="tab"
+                    >{{resume.button1Text}}</a
+                  >
+                </li>
+                <li><a href="#experience" data-toggle="tab">{{resume.button2Text}}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-content">
+              <div class="resume__education tab-pane active" id="education">
+                {% for education in resume.education %}
+                  <div class="resume__education_item">
+                    <span>{{ education.year }}</span>
+                    <h4> {{ education.degree }} </h4>
+                    <p> {{ education.des }} </p>
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="resume__education tab-pane" id="experience">
+                {% for experience in resume.experience %}
+                  <div class="resume__education_item">
+                    <span> {{ experience.year }} </span>
+                    <h4> {{ experience.experience }} </h4>
+                    <p> {{ experience.des }} </p>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skill">
+      <div class="skill__background_shape">
+        <!-- <img src="images/skill/skill-background-shape.svg" alt="background-shape"> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 600 600"
+        >
+          <defs>
+            <linearGradient
+              id="d"
+              x1="0.929"
+              y1="0.111"
+              x2="0.263"
+              y2="0.935"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stop-color="#f1f6f9" />
+              <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <g data-name="blob-shape (3)">
+            <path
+              class="blob"
+              fill="url(#d)"
+              d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="skill__background_pattern">
+        <img
+          src="/assets/images/service/background-pattern.svg"
+          alt="background-shape"
+        />
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="skill__thumb">
+              <div class="skill__thumb_pattern">
+                <img
+                  src="/assets/images/hero/figure-svg.svg"
+                  alt="figure-svg"
+                />
+              </div>
+              <div class="skill__thumb_image">
+                <img
+                  class="skill_mask_svg"
+                  src="{{skill.skillImg}}"
+                  alt="skill-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skill__progress">
+              <div class="skill__progress_heading">
+                <span>{{skill.skillSubtitle}}</span>
+                <h1>{{skill.skillTitle}}</h1>
+                <p>
+                  {{skill.skillDes}}
+                </p>
+              </div>
+              {% for skilledIn in skill.skilledIn %}
+                <div class="skill__progress_item">
+                  <h6>{{skilledIn.title}}</h6>
+                  <div class="progress-value"><span>{{skilledIn.percent}}</span>%</div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      style="width: {{skilledIn.percent}}%"
+                      aria-valuemin="0"
+                      aria-valuemax="{{skilledIn.percent}}"
+                    ></div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonial">
+      <div class="testimonial__background_shape">
+        <svg viewBox="0 0 1920 79">
+          <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="testimonial__header">
+              <span>{{testimonials.testimonialSubtitle}}</span>
+              <h1>{{testimonials.testiminialTitle}}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="testimonial__slider">
+              {% for recommendedBy in testimonials.recommendedBy %}
+                <div class="testimonial__slider_item">
+                  <ul class="testimonial__slider_item-rating">
+                    {% for item in range(1,6) %}
+                      {% if item <= recommendedBy.rating %}
+                        <li>
+                        <i class="fa fa-{{recommendedBy.ratingIcon}}"></i>
+                        </li>
+                      {% else %}
+                        <li>
+                        <i style="color:#7e7e8a" class="fa fa-{{recommendedBy.ratingIcon}}"></i>
+                        </li>
+                      {% endif %}
+                        
+                    {% endfor %}
+                  </ul>
+                  <p class="testimonial__slider_item-content">
+                    {{recommendedBy.comment}}
+                  </p>
+                  <p class="testimonial__slider_item-author">
+                    <span>{{recommendedBy.author}}</span> {{recommendedBy.commentDate}}
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog" id="{{nav.navLinks[5]}}">
+      <div class="blog__shape">
+        <img src="/assets/images/blog/blog-shape.svg" alt="blog shape" />
+      </div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <div class="blog__header">
+              <span>{{blog.blogSubTitle}}</span>
+              <h1>{{blog.blogTitle}}</h1>
+              <p>
+                {{blog.blogDes}}
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog__header_button desktop">
+              <a href="/blog">{{blog.blogBtnText}}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          {% for blog in collections.blogHome %}
+            <div class="col-lg-4">
+              <div class="blog__item">
+                <div class="blog__item-thumb">
+                  <img src="{{blog.data.blogImg}}" alt="blogImg" />
+                </div>
+                <div class="blog__item-content">
+                  <span>{{blog.data.publishedDate}}</span>
+                  <a href="{{blog.data.page.url}}">
+                    {{blog.data.blogTitle}}
+                  </a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="blog__header_button mobile">
+              <a href="blog.html">{{blog.blogBtnText}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

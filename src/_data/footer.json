@@ -1,0 +1,67 @@
+{
+  "contact":{
+    "subTitle": "Contact me",
+    "title": "Let’s Start a Project",
+    "buttonText": "Get in touch"
+  },
+  "footerLogo": "/assets/images/contact/widget-logo.png",
+
+  "sitemapHeader": "Sitemap",
+  "footerSitemap":[
+    {
+      "linkText": "About me",
+      "link":"about"
+    },
+    {
+      "linkText": "Terms & Conditions",
+      "link":"term-condition"
+    },
+    {
+      "linkText": "Privacy & Policy",
+      "link":"privacy-policy"
+    },
+    {
+      "linkText": "Latest Article",
+      "link":"blog"
+    }
+  ],
+
+  "addressHeader":"Address",
+  "footerAddress":[
+    {
+      "linkText": "+(448) 833 5272 332",
+      "linkIcon": "phone",
+      "link":"tel:448 833 5272 332"
+    },
+    {
+      "linkText": "hello@example.com",
+      "linkIcon": "envelope",
+      "link":"mailto:hello@example.com"
+    },
+    {
+      "linkText": "23 Khan Niketon, Grand Street,NYK.",
+      "linkIcon": "map-marker",
+      "link":"https://goo.gl/maps/4zcXo9aT2CK9PvJ2A"
+    }
+  ],
+
+  "footerCopyrightsText":"All right reserved copyright © Portio",
+  "footerSocialLinks":[
+    {
+      "link":"#",
+      "linkIcon": "facebook-official"
+    },
+    {
+      "link":"#",
+      "linkIcon": "twitter-square"
+    },
+    {
+      "link":"#",
+      "linkIcon": "linkedin-square"
+    },
+    {
+      "link":"#",
+      "linkIcon": "pinterest-square"
+    }
+  ]
+}

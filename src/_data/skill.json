@@ -1,0 +1,20 @@
+{
+  "skillSubtitle": "My Skills",
+  "skillTitle": "Why hire me for your next project?",
+  "skillDes": "My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.",
+  "skillImg": "/assets/images/skill/skill_image.jpg",
+  "skilledIn":[
+    {
+      "title": "HTML",
+      "percent": 75
+    },
+    {
+      "title": "CSS",
+      "percent": 60
+    },
+    {
+      "title": "Javascript",
+      "percent": 85
+    }
+  ]
+}

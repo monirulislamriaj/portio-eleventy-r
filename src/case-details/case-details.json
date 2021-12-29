@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/caseDetails.njk",
+  "tags": "caseDetails",
+  "socialLinks":["linkedin-square","pinterest-square","facebook-official"]
+}

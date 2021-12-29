@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portio</title>
+
+    <!--Meta For No Index-->
+    <meta name="robots" content="noindex, Nofollow, Noimageindex">
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="/assets/vendor/slick/slick.css" />
+    <link rel="stylesheet" href="/assets/vendor/slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/magnafic-popup/magnific-popup.css" />
+    <!-- Stylesheets -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon" />
+  </head>
+  <body data-spy="scroll">
+
+    {% block preloader %}{% endblock %}
+    
+    {% block nav %}
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src={{nav.navLogo}} alt="site-logo" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler collapsed"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <ul class="nav navbar-nav main-navigation">
+            {% for navLinks in nav.navLinks %}
+              {% if navLinks == "home" %}
+                <li class="nav-item active">
+                  <a href="#{{navLinks}}" class="nav-link scroll">{{navLinks | capitalize}}</a>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a href="#{{navLinks}}" class="nav-link scroll">{{navLinks | capitalize}}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <div class="navbar-nav">
+            <a href="/contact" class="hire_button">{{nav.navButtonText}}</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+
+    {% block footer %}
+    <section class="contact" id="{{nav.navLinks[6]}}">
+      <div class="contact__background_shape">
+        <svg viewBox="0 0 1920 79">
+          <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact__cta">
+              <div class="shape-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="357"
+                  height="315.029"
+                  viewBox="0 0 357 315.029"
+                >
+                  <path
+                    data-name="Path 1449"
+                    d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+                    transform="translate(217.489 188.626)"
+                  />
+                </svg>
+              </div>
+              <div class="shape-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="357"
+                  height="315.029"
+                  viewBox="0 0 357 315.029"
+                >
+                  <path
+                    data-name="Path 1449"
+                    d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+                    transform="translate(217.489 188.626)"
+                  />
+                </svg>
+              </div>
+              <div class="contact__cta_content">
+                <span>{{footer.contact.subTitle}}</span>
+                <h1>{{footer.contact.title}}</h1>
+              </div>
+              <div class="contact__cta_action">
+                <a href="/contact">{{footer.contact.buttonText}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row contact__widget">
+          <div class="col-lg-4">
+            <div class="contact__widget_logo">
+              <img src="{{footer.footerLogo}}" alt="widget-logo" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact__widget_sitemap">
+              <h3>{{footer.sitemapHeader}}</h3>
+              <ul>
+                {% for sitemap in footer.footerSitemap %}
+                  {% if sitemap.linkText == "About me" %}
+                    <li>
+                      <a class="scroll" href="#{{sitemap.link}}">{{sitemap.linkText}}</a>
+                    </li>
+                  {% else %}
+                    <li>
+                      <a href="/{{sitemap.link}}">{{sitemap.linkText}}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact__widget_address">
+              <h3>{{footer.addressHeader}}</h3>
+              <ul>
+              {% for address in footer.footerAddress %}
+                <li>
+                  <a href="{{address.link}}">
+                    <i class="fa fa-{{address.linkIcon}}"></i>{{address.linkText}}
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row contact__footer">
+          <div class="col-lg-6">
+            <div class="contact__footer_copy">
+              <p>
+                {{footer.footerCopyrightsText}}
+                <span id="newYear"></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact__footer_social">
+              <ul>
+              {% for footerSocialLinks in footer.footerSocialLinks %}
+                <li>
+                  <a href="{{footerSocialLinks.link}}">
+                    <i class="fa fa-{{footerSocialLinks.linkIcon}}"></i>
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endblock %}
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0&libraries=geometry"></script>
+    <script src="/assets/vendor/jQuery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/vendor/slick/slick.min.js"></script>
+    <script src="/assets/vendor/slick/slick.min.js"></script>
+    <script src="/assets/vendor/waypoint/jquery.waypoints.min.js"></script>
+    <script src="/assets/vendor/magnafic-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/vendor/tweenmax/TweenMax.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
